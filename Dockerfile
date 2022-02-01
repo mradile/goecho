@@ -1,4 +1,4 @@
-FROM golang:1.16-buster as gobuilder
+FROM golang:1.17-buster as gobuilder
 RUN DEBIAN_FRONTEND=noninteractive apt-get update \
     && apt-get install -y --no-install-recommends ca-certificates git
 
